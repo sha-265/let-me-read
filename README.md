@@ -2,5 +2,4 @@
 an extension for removing Haaretz "members only" limitation. currently in dev mode.
 
 #installation:
-* clone the repo
-* see the "Create the Manifest" section in https://developer.chrome.com/extensions/getstarted.
+https://addons.mozilla.org/en-US/firefox/addon/let-me-read-haaretz-android/
