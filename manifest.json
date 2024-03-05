@@ -1,7 +1,7 @@
 {
   "name": "Let Me Read Haaretz (Desktop & Android)",
   "short_name": "LetMeReadAndroid",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "content_scripts": [
     {
       "matches": ["https://www.haaretz.co.il/*",
