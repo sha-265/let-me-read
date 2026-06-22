@@ -11,7 +11,7 @@ browser.webRequest.onBeforeSendHeaders.addListener(
     function(details) {
         for (var i = 0; i < details.requestHeaders.length; ++i) {
             if (details.requestHeaders[i].name === 'User-Agent') {
-                details.requestHeaders[i].value = 'Mozilla/5.0 (Java) outbrain';
+                details.requestHeaders[i].value = 'Mozilla/5.0 (Linux; Android 9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.6668.70 Safari/537.36 haaretz/5.0.49';
                 break;
             }
         }
