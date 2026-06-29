@@ -17,6 +17,6 @@ browser.webRequest.onBeforeSendHeaders.addListener(
         }
         return {requestHeaders: details.requestHeaders};
     },
-    {urls: ["https://www.haaretz.co.il/*", "https://www.haaretz.com/*", "https://www.themarker.com/*", "https://www.quora.com/*"]},
+    {urls: ["https://www.haaretz.co.il/*ty-article*", "https://www.haaretz.com/*ty-article*", "https://www.themarker.com/*ty-article*"]},
     ['blocking', 'requestHeaders']
     );
