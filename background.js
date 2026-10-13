@@ -11,12 +11,29 @@ browser.webRequest.onBeforeSendHeaders.addListener(
     function(details) {
         for (var i = 0; i < details.requestHeaders.length; ++i) {
             if (details.requestHeaders[i].name === 'User-Agent') {
-                details.requestHeaders[i].value = 'Mozilla/5.0 (Linux; Android 9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.6668.70 Safari/537.36 haaretz/5.0.49';
+                details.requestHeaders[i].value = 
+                    'Mozilla/5.0 (Linux; Android 9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.6668.70 Safari/537.36 haaretz/5.0.49';
                 break;
             }
         }
+        
+        details.requestHeaders.push({
+            name: "ismobileapp",
+            value: "true"
+        }, {
+            name: "platform",
+            value: "app"
+        }, {
+            name: "renderingkind",
+            value: "opened"
+        });
+        
         return {requestHeaders: details.requestHeaders};
     },
-    {urls: ["https://www.haaretz.co.il/*ty-article*", "https://www.haaretz.com/*ty-article*", "https://www.themarker.com/*ty-article*"]},
+    {
+        urls: ["https://www.haaretz.co.il/*ty-article*",
+            "https://www.haaretz.com/*ty-article*",
+            "https://www.themarker.com/*ty-article*"]
+    },
     ['blocking', 'requestHeaders']
     );
