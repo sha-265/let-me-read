@@ -1,5 +1,6 @@
-# let-me-read
-an extension for removing Haaretz "members only" limitation. currently in dev mode.
+# Screw Haaretz
+an extension for removing Haaretz "members only" limitation
 
-#installation:
-https://addons.mozilla.org/en-US/firefox/addon/let-me-read-haaretz-android/
+## Installation
+
+[<img width="172" height="60" alt="image" src="https://github.com/user-attachments/assets/6d98417f-2b42-4883-9be0-a92baba265c1" />](https://addons.mozilla.org/firefox/addon/screw-haaretz/)
